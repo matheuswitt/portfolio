@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --cor-clara: #f6f6f6;
-    --cor-escura: #151515;
-    --cor-destaque: #295231;    
+    --cor-principal: #151515;
+    --cor-secundaria: #f6f6f6;
+    --cor-destaque: #d35f00;    
 }
 
 * {
@@ -13,13 +13,13 @@
 }
 
 body {
-    background-color: var(--cor-clara);
-    color: var(--cor-clara);
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--cor-principal);
+    color: var(--cor-principal);
+    font-family: "Space Grotesk", sans-serif;
 }
 
 nav {
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-principal);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -51,25 +51,25 @@ nav .menu {
     z-index: 10;
     width: 70vw;
     height: 100%;
-    background-color: #151515;
+    background-color: var(--cor-principal);
     margin: 0px 0px;
     font-weight: 900;
-    transition: 0.7s ease;
+    transition: 0.5s ease;
 }
 
 nav a {
     display: flex;
     padding: 10px 0px 10px 15px;
     text-decoration: none;
-    color: var(--cor-clara);
+    color: var(--cor-secundaria);
     text-transform: uppercase;
     height: auto;
     width: auto;
 }
 
 .menu a:hover {
-    background-color: var(--cor-clara);
-    color: var(--cor-escura);
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
 
 
@@ -79,7 +79,7 @@ nav a {
 
 .open-sidebar-button {
     display: block;
-    padding-right: 10px;
+    padding-right: 20px;
     cursor: pointer;
 }
 
@@ -103,20 +103,21 @@ nav a {
 }
 
 .categorias div {
-    background-color: #f6f6f6;
+    background-color: var(--cor-secundaria);
     width: 100vw;
     height: 150px;
     cursor: pointer;
-    transition: height 0.3s ease;
+    transition: 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20pt;
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
 }
 
 .categorias div:hover {
     height: 250px;
+    color: #f6f6f600;
 }
 
 .categorias div h1 {
@@ -141,13 +142,12 @@ nav a {
 /* DESTAQUES AQUI */
 
 h1#tituloCategoria {
-    padding: 15px;
+    padding: 15px 0px 5px 10px;
     font-size: 20pt;
-    color: var(--cor-escura);
+    color: var(--cor-secundaria);
 }
 
 .destaques {
-    background-color: #3a7544;
     display: flex;
     justify-content: baseline;
     flex-direction: row;
@@ -172,10 +172,12 @@ div.trabalho {
     top: 0;
     padding: 15px;
     text-decoration: none;
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
+    transition: 0.3s ease;
 }
 .trabalho:hover .overlay {
-    display: none;
+    background-color: #15151500;
+    color: #f6f6f600;
 }
 .overlay h1 {
     font-size: 14pt;

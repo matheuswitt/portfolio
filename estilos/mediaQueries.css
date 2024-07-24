@@ -1,11 +1,15 @@
 @charset "UTF-8";
 :root {
-    --cor-clara: #f6f6f6;
-    --cor-escura: #151515;
-    --cor-destaque: #295231;
+    --cor-principal: #151515;
+    --cor-secundaria: #f6f6f6;
+    --cor-destaque: #d35f00;    
 }
 
 @media screen and (min-width: 728px) {
+
+    nav {
+        height: 80px;
+    }
    
     .open-sidebar-button, .close-sidebar-button {
         display: none;
@@ -18,22 +22,21 @@
         align-items: center;
         right: auto;
         width: auto;
-        background-color: var(--cor-destaque);
+        padding-right: 20px;
     }
 
     .menu a {
         display: flex;
         padding: 10px;
         text-decoration: none;
-        color: var(--cor-clara);
         text-transform: uppercase;
         height: auto;
         width: auto;
     }
 
     .menu a:hover {
-        background-color: var(--cor-destaque);
-        color: var(--cor-clara);
+        background-color: var(--cor-principal);
+        color: var(--cor-secundaria);
         text-decoration: underline;
     }
 
@@ -46,7 +49,7 @@
         height: 100%;
         width: 100%;
         min-width: 242px;
-        transition: width 0.7s;
+        transition: 0.3s ease;
         align-items: self-end;
     }
     .categorias div:hover {
