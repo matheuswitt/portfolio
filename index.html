@@ -13,11 +13,26 @@
 <body>
     <nav>
         <h1><a href="#">MATHEUS WITT</a></h1>
+        <input type="checkbox" name="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </label>
+
+        <label id="overlayMenu" for="sidebar-active"></label>
         <div class="menu">
+            <label for="sidebar-active" class="close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg"
+                    height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
             <a href="#">home</a>
             <a href="#">trabalhos</a>
             <a href="#">contato</a>
         </div>
+
     </nav>
     <main>
         <section class="categorias">
@@ -34,45 +49,45 @@
         <h1 id="tituloCategoria">Últimos trabalhos > ></h1>
         <section class="destaques">
             <div class="trabalho"
-            style="background: url(imagens/recente1.jpeg) no-repeat center center; background-size: cover;">
-            <a href="">
+                style="background: url(imagens/recente1.jpeg) no-repeat center center; background-size: cover;">
+                <a href="">
                     <div class="overlay">
                         <h1>Pivotal</h1>
                         <h2>Taiwan, 2024</h2>
                         <p>Animação de logo</p>
                     </div>
                 </a>
-                </div>
+            </div>
             <div class="trabalho"
-            style="background: url(imagens/recente2.jpeg) no-repeat center center; background-size: cover;">
-            <a href="">
+                style="background: url(imagens/recente2.jpeg) no-repeat center center; background-size: cover;">
+                <a href="">
                     <div class="overlay">
                         <h1>Dead Fish</h1>
                         <h2>Blumenau, 2024</h2>
                         <p>Cobertura fotográfica</p>
                     </div>
                 </a>
-                </div>
+            </div>
             <div class="trabalho"
-            style="background: url(imagens/recente3.jpeg) no-repeat center center; background-size: cover;">
-            <a href="">
+                style="background: url(imagens/recente3.jpeg) no-repeat center center; background-size: cover;">
+                <a href="">
                     <div class="overlay">
                         <h1>Ornellas</h1>
                         <h2>Jaraguá do Sul, 2023</h2>
                         <p>Cobertura fotográfica</p>
                     </div>
                 </a>
-                </div>
+            </div>
             <div class="trabalho"
-            style="background: url(imagens/recente4.jpeg) no-repeat center center; background-size: cover;">
-            <a href="">
+                style="background: url(imagens/recente4.jpeg) no-repeat center center; background-size: cover;">
+                <a href="">
                     <div class="overlay">
                         <h1>Carvalho Trio</h1>
                         <h2>Jaraguá do Sul, 2023</h2>
                         <p>Cobertura fotográfica</p>
                     </div>
                 </a>
-                </div>
+            </div>
         </section>
     </main>
 </body>

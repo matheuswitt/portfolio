@@ -3,7 +3,7 @@
 :root {
     --cor-clara: #f6f6f6;
     --cor-escura: #151515;
-    --cor-destaque: #3a7544;
+    --cor-destaque: #295231;    
 }
 
 * {
@@ -21,36 +21,78 @@ body {
 nav {
     background-color: var(--cor-destaque);
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     height: 50px;
 }
 
 nav h1 {
     padding: 10px;
-    display: none;
+    margin-right: auto;
+}
+
+#sidebar-active:checked ~ #overlayMenu {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
 }
 
 nav .menu {
-    display: flex;
-    height: 100%;
+    flex-direction: column;
     justify-content: baseline;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 70vw;
+    height: 100%;
+    background-color: #151515;
     margin: 0px 0px;
     font-weight: 900;
+    transition: 0.7s ease;
 }
 
 nav a {
-    padding: 15px;
+    display: flex;
+    padding: 10px 0px 10px 15px;
     text-decoration: none;
     color: var(--cor-clara);
     text-transform: uppercase;
-    height: 100%;
+    height: auto;
+    width: auto;
 }
 
 .menu a:hover {
-    background-color: #151515;
-    border-bottom: 2px solid var(--cor-destaque);
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
 }
+
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button {
+    display: block;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.close-sidebar-button {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sidebar-active:checked ~ .menu {
+    right: 0px;
+}
+
 
 /* CORPO COMEÇA AQUI! */
 

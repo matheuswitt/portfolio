@@ -1,6 +1,42 @@
 @charset "UTF-8";
+:root {
+    --cor-clara: #f6f6f6;
+    --cor-escura: #151515;
+    --cor-destaque: #295231;
+}
 
 @media screen and (min-width: 728px) {
+   
+    .open-sidebar-button, .close-sidebar-button {
+        display: none;
+    }
+    div.menu {
+        display: flex;
+        flex-direction: row;
+        height: 100%;  
+        position: relative;
+        align-items: center;
+        right: auto;
+        width: auto;
+        background-color: var(--cor-destaque);
+    }
+
+    .menu a {
+        display: flex;
+        padding: 10px;
+        text-decoration: none;
+        color: var(--cor-clara);
+        text-transform: uppercase;
+        height: auto;
+        width: auto;
+    }
+
+    .menu a:hover {
+        background-color: var(--cor-destaque);
+        color: var(--cor-clara);
+        text-decoration: underline;
+    }
+
     .categorias {
         flex-flow: row nowrap;
         width: 100vw;
@@ -23,8 +59,8 @@
     }
 
     h1#tituloCategoria {
-        text-align: center;
-        margin: 20px 20px;
+        text-align: left;
+        margin: 20px auto auto auto;
         font-size: 15pt;
 
     }
@@ -37,7 +73,19 @@
     }
 
     .destaques .trabalho {
-        height: 300px;
-        min-width: 500px;
+        height: 400px;
+        min-width: 600px;
+    }
+
+    .overlay h1 {
+        font-size: 3em;
+    }
+    .overlay h2 {
+        font-size: 1em;
+        padding-left: 5px;
+    }
+    .overlay p {
+        font-size: 1em;
+        padding-left: 5px;
     }
 }
