@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 728px) {
+    .categorias {
+        flex-flow: row nowrap;
+        width: 100vw;
+        height: 500px;
+    }
+    .categorias div {
+        height: 100%;
+        width: 100%;
+        min-width: 242px;
+        transition: width 0.7s;
+        align-items: self-end;
+    }
+    .categorias div:hover {
+        height: auto;
+        width: 150%;
+    }
+    .categorias h1 {
+        font-size: 30pt;
+        margin-bottom: 20px;
+    }
+
+    h1#tituloCategoria {
+        text-align: center;
+        margin: 20px 20px;
+        font-size: 15pt;
+
+    }
+
+    .destaques {
+        height: auto;
+        width: 100vw;
+        overflow: auto;
+        flex-direction: row;
+    }
+
+    .destaques .trabalho {
+        height: 300px;
+        min-width: 500px;
+    }
+}

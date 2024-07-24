@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+:root {
+    --cor-clara: #f6f6f6;
+    --cor-escura: #151515;
+    --cor-destaque: #3a7544;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-clara);
+    color: var(--cor-clara);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+nav {
+    background-color: var(--cor-destaque);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+nav h1 {
+    padding: 10px;
+}
+
+nav .menu {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0px 0px;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: var(--cor-clara);
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.menu a:hover {
+    background-color: #151515;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+/* CORPO COMEÇA AQUI! */
+
+.categorias {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+}
+
+.categorias div {
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 150px;
+    cursor: pointer;
+    transition: height 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30pt;
+    color: #f6f6f6;
+}
+
+.categorias div:hover {
+    height: 250px;
+}
+
+#categoria1 {
+    background: url(../_imagens/capa1.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+#categoria2 {
+    background: url(../_imagens/capa2.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+#categoria3 {
+    background: url(../_imagens/capa3.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+/* DESTAQUES AQUI */
+
+h1#tituloCategoria {
+    padding: 15px;
+    font-size: 20pt;
+    color: var(--cor-escura);
+}
+
+.destaques {
+    background-color: #3a7544;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    scrollbar-width: none;
+    overflow: scroll;
+    width: auto;
+    height: auto;
+}
+
+div.trabalho {
+    height: 200px;
+    min-width: 280px;
+    position: relative;
+}
+
+.overlay {
+    background-color: #1515157d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    text-decoration: none;
+    color: #f6f6f6;
+}
+.trabalho:hover .overlay {
+    display: none;
+}
+.overlay h1 {
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+.overlay h2 {
+    font-size: 10pt;
+}
+
+.overlay p {
+    font-size: 8pt;
+    font-style: italic;
+}
