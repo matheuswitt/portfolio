@@ -16,6 +16,7 @@ body {
     background-color: var(--cor-principal);
     color: var(--cor-principal);
     font-family: "Space Grotesk", sans-serif;
+    height: auto;
 }
 
 nav {
@@ -103,7 +104,6 @@ nav a {
 }
 
 .categorias div {
-    background-color: var(--cor-secundaria);
     width: 100vw;
     height: 150px;
     cursor: pointer;
@@ -118,6 +118,10 @@ nav a {
 .categorias div:hover {
     height: 250px;
     color: #f6f6f600;
+    backdrop-filter: grayscale(0);
+}
+.categorias div:hover > .overlay {
+    background-color: #15151500;
 }
 
 .categorias div h1 {
@@ -125,18 +129,26 @@ nav a {
 }
 
 #categoria1 {
-    background: url(../imagens/capa1.jpeg) no-repeat center center;
+    background: url(../imagens/capa1.jpg) no-repeat center center;
     background-size: cover;
+    position: relative;
 }
 
 #categoria2 {
-    background: url(../imagens/capa2.jpeg) no-repeat center center;
+    background: url(../imagens/capa2.jpg) no-repeat center center;
     background-size: cover;
+    position: relative;
 }
 
 #categoria3 {
     background: url(../imagens/capa3.jpeg) no-repeat center center;
     background-size: cover;
+    position: relative;
+}
+#categoria4 {
+    background-color: #8200d3;
+    background-size: cover;
+    position: relative;
 }
 
 /* DESTAQUES AQUI */
@@ -144,7 +156,8 @@ nav a {
 h1#tituloCategoria {
     padding: 15px 0px 5px 10px;
     font-size: 20pt;
-    color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
 }
 
 .destaques {
@@ -165,6 +178,7 @@ div.trabalho {
 
 .overlay {
     background-color: #1515157d;
+    backdrop-filter: grayscale();
     width: 100%;
     height: 100%;
     position: absolute;
@@ -177,6 +191,7 @@ div.trabalho {
 }
 .trabalho:hover .overlay {
     background-color: #15151500;
+    backdrop-filter: none;
     color: #f6f6f600;
 }
 .overlay h1 {
@@ -191,4 +206,30 @@ div.trabalho {
 .overlay p {
     font-size: 8pt;
     font-style: italic;
+}
+
+/* .overlay svg {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 40px;
+    height: 100px;
+    width: auto;
+    motion-rotation: auto;
+} */
+
+/* RODAPÉ */
+
+footer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--cor-secundaria);
+    font-size: 10pt;
 }
