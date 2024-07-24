@@ -77,17 +77,17 @@ nav a {
 }
 
 #categoria1 {
-    background: url(../_imagens/capa1.jpeg) no-repeat center center;
+    background: url(../imagens/capa1.jpeg) no-repeat center center;
     background-size: cover;
 }
 
 #categoria2 {
-    background: url(../_imagens/capa2.jpeg) no-repeat center center;
+    background: url(../imagens/capa2.jpeg) no-repeat center center;
     background-size: cover;
 }
 
 #categoria3 {
-    background: url(../_imagens/capa3.jpeg) no-repeat center center;
+    background: url(../imagens/capa3.jpeg) no-repeat center center;
     background-size: cover;
 }
 
