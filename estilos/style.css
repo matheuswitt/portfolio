@@ -68,12 +68,16 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30pt;
+    font-size: 20pt;
     color: #f6f6f6;
 }
 
 .categorias div:hover {
     height: 250px;
+}
+
+.categorias div h1 {
+    overflow: hidden;
 }
 
 #categoria1 {
