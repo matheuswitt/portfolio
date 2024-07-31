@@ -136,6 +136,11 @@ main {
     z-index: 6;
     background-color: #15151571;
     position: absolute;
+    pointer-events: none;
+}
+
+.video-container {
+    position: relative;
 }
 
 .categorias h1 {
@@ -171,6 +176,12 @@ main {
     background-color: #8200d3;
     background-size: cover;
     position: relative;
+}
+
+.hover-video {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* #Layer_1 {
