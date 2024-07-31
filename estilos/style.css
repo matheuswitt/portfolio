@@ -132,9 +132,8 @@ main {
 }
 
 .overlayCategorias {
-    backdrop-filter: grayscale(0);
     z-index: 6;
-    background-color: #15151571;
+    background-color: #15151580;
     position: absolute;
     pointer-events: none;
 }
@@ -148,12 +147,6 @@ main {
     position: absolute;
 }
 
-.categorias div:hover {
-    height: 150%;
-    color: #f6f6f600;
-    backdrop-filter: grayscale(0);
-    background-color: #15151500;
-}
 
 #categoria1 {
     background: url(../imagens/capa1.jpg) no-repeat center center;
@@ -239,7 +232,7 @@ main {
     display: none;
 } */
 
-/* DESTAQUES AQUI */
+/* ------------------- DESTAQUES AQUI */
 
 h1#tituloCategoria {
     padding: 15px 0px 5px 10px;
