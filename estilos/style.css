@@ -17,14 +17,18 @@ body {
     color: var(--cor-principal);
     font-family: "Space Grotesk", sans-serif;
     height: auto;
+    width: 100vw;
 }
 
 nav {
-    background-color: var(--cor-principal);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
 }
 
 nav h1 {
@@ -32,6 +36,7 @@ nav h1 {
     margin-right: auto;
 }
 
+/* overlayMenu cria uma camada invisível para bloquear a interação com o site enquanto o menu estiver aberto */
 #sidebar-active:checked ~ #overlayMenu {
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
@@ -70,7 +75,7 @@ nav a {
 
 .menu a:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    /* color: var(--cor-principal); */
 }
 
 
@@ -97,12 +102,19 @@ nav a {
 
 /* CORPO COMEÇA AQUI! */
 
+main {
+    position: absolute;
+    top: 50px;
+    width: 100vw;
+}
+
 .categorias {
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
     height: calc(100vh - 50px);
     overflow: hidden;
+    width: 100vw;
 }
 
 .categorias div {
@@ -119,13 +131,16 @@ nav a {
     z-index: 8;
 }
 
-.categorias .overlay {
+.overlayCategorias {
     backdrop-filter: grayscale(0);
     z-index: 6;
+    background-color: #15151571;
+    position: absolute;
 }
 
 .categorias h1 {
     z-index: 7;
+    position: absolute;
 }
 
 .categorias div:hover {
@@ -158,7 +173,7 @@ nav a {
     position: relative;
 }
 
-#Layer_1 {
+/* #Layer_1 {
     position: absolute;
     top: 20%;
     left: 20%;
@@ -171,19 +186,47 @@ nav a {
     top: 40%;
     left: 40px;
     width: 100px;
-    animation-name: anima1;
     animation-duration: 0.5s;
+    rotate: 180deg;
 }
 
 #Layer_2 {
-    display: none;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 100px;
+    transition: 0.6s ease;
 }
+
+.categorias div:hover #Layer_2 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 100px;
+    animation-duration: 0.5s;
+    rotate: -180deg;
+}
+
 #Layer_3 {
-    display: none;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 150px;
+    transition: 0.6s ease;
 }
+
+.categorias div:hover #Layer_3 {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    width: 100px;
+    animation-duration: 0.5s;
+    rotate: -180deg;
+}
+
 #Layer_4 {
     display: none;
-}
+} */
 
 /* DESTAQUES AQUI */
 

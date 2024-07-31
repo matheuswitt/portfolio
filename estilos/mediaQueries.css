@@ -23,19 +23,21 @@
         right: auto;
         width: auto;
         padding-right: 20px;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .menu a {
         display: flex;
+        align-items: center;
         padding: 10px;
         text-decoration: none;
         text-transform: uppercase;
-        height: auto;
+        height: 100%;
         width: auto;
     }
 
     .menu a:hover {
-        background-color: var(--cor-principal);
+        background-color: #15151500;
         color: var(--cor-secundaria);
         text-decoration: underline;
     }
@@ -49,6 +51,11 @@
         height: auto;
         width: 150%;
     } */
+
+    main {
+        position: absolute;
+        top: 80px;
+    }
 
     .categorias {
         flex-flow: column nowrap;
