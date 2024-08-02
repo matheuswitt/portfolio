@@ -15,10 +15,12 @@
         display: none;
     }
     div.menu {
-        display: flex;
-        flex-direction: row;
-        height: 100%;  
         position: relative;
+        padding: 0;
+        top: 0;
+        height: 100%;  
+        display: flex;
+        flex-flow: row nowrap;
         align-items: center;
         right: auto;
         width: auto;
@@ -26,14 +28,18 @@
         background-color: rgba(0, 0, 0, 0);
     }
 
+    
     .menu a {
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
         padding: 10px;
         text-decoration: none;
         text-transform: uppercase;
-        height: 100%;
+        height: auto;
         width: auto;
+        position: relative;
+        top: 0;
+        padding: 10px;        
     }
 
     .menu a:hover {
