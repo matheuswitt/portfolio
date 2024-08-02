@@ -73,7 +73,7 @@
     }
 
     .categorias div:hover {
-        background-color: #f6f6f6;
+        background-color: #f6f6f600;
     }
 
     .categorias div {
@@ -108,5 +108,21 @@
     .overlay p {
         font-size: 1em;
         padding-left: 5px;
+    }
+
+    main.paginaCategoria {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    .categoriaTrabalho {
+        min-width: 400px;
+        height: 200px;
+        background-color: var(--cor-secundaria);
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 15px;
     }
 }
